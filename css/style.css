@@ -486,6 +486,10 @@ header {
   display: none;
 }
 
+.logo {
+  position: relative;
+}
+
 .nav {
   max-width: 715px;
 }
@@ -510,6 +514,31 @@ header {
 
 .nav__link {
   color: #fff;
+  position: relative;
+}
+
+.nav__link:after, .logo:after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  background-color: #fff;
+  bottom: -10px;
+  left: -5%;
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.nav__link:hover:after, .logo:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .company {
@@ -1301,7 +1330,15 @@ footer .container {
   }
 }
 @media (max-width: 992px) {
-  /* стилизуем кнопку */
+  .head {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   #menu__toggle {
     display: block;
     position: fixed;
@@ -1382,6 +1419,10 @@ footer .container {
     display: block;
     padding: 12px 24px;
     font-size: 20px;
+  }
+
+  .logo:after, .nav__link:after {
+    display: none;
   }
 
   .menu__item:hover {

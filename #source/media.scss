@@ -34,7 +34,12 @@
 }
 
 @media (max-width: 992px) {
-	/* стилизуем кнопку */
+
+	.head {
+		transform: none;
+		justify-content: center;
+	}
+
 	#menu__toggle {
 		display: block;
 		position: fixed;
@@ -99,6 +104,10 @@
 		display: block;
 		padding: 12px 24px;
 		font-size: 20px;
+	}
+
+	.logo:after, .nav__link:after {
+		display: none;
 	}
 	.menu__item:hover {
 	  background-color: #CFD8DC;
