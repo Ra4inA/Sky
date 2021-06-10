@@ -69,4 +69,4 @@ $(animItems).addClass("_animate-Active");
 //     }
 //   }
 // }
-$(window).ready(animateItems).on("scroll", animateItems);
+// $(window).ready(animateItems).on("scroll", animateItems);
