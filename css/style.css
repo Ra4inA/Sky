@@ -712,36 +712,11 @@ header {
   font-size: 15px;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
-/* Лента слайдов */
-/* Слайд */
 .offer__items .slick-slide {
   width: 100vw;
   max-width: 100vw;
 }
 
-/* */
-/* Слайд активный (показывается) */
-/**/
-/* .offer__items .slick-slide.slick-active{}*/
-/* */
-/* Слайд основной */
-/**/
-/* .offer__items .slick-slide.slick-current{}*/
-/* */
-/* Слайд по центру */
-/**/
-/* .offer__items .slick-slide.slick-center{}*/
-/* */
-/* Клонированный слайд */
-/**/
-/* .offer__items .slick-slide.slick-cloned{}*/
-/* */
-/* Стрелка */
-/**/
 .offer__items .slick-arrow {
   border: none;
   font-size: 0;
@@ -768,12 +743,10 @@ header {
   transform: translateY(-50%);
 }
 
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
+
 /* Photos */
 .photos {
+  overflow: hidden;
   margin-bottom: 160px;
   display: -ms-grid;
   display: grid;
